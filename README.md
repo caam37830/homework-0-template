@@ -19,7 +19,7 @@ The following Rubric will be used for grading.
 | Problem 3 | /5 | /8  | /2  | /15 |
 | Problem 4 |   |  /10 | /5  | /15 |
 
-To get full points on style, you should use comments to explain what you are doing in your code, and write docstrings for your functions.
+To get full points on style you should use comments to explain what you are doing in your code and write docstrings for your functions.
 
 ## Autograder
 
@@ -63,7 +63,7 @@ Implement the following [Fizzbuzz](https://imranontech.com/2007/01/24/using-fizz
 
 Write a python script [`fizzbuzz.py`](fizzbuzz.py) which prints the numbers from 1 to 100, but for multiples of 3 print "fizz" instead of the number, for multiples of 5 print "buzz" instead of the number, and for multiples of both 3 and 5 print "fizzbuzz" instead of the number.
 
-The output of the first few lines should look like
+The first few lines of output should look like
 ```
 1
 2
