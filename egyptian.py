@@ -16,6 +16,8 @@ def egyptian_multiplication(a, n):
 
     if n == 1:
         return a
+    if n == 0:
+        return 0
 
     if isodd(n):
         return egyptian_multiplication(a + a, n // 2) + a
@@ -23,10 +25,11 @@ def egyptian_multiplication(a, n):
         return egyptian_multiplication(a + a, n // 2)
 
 
-
-for a in [1,2,3]:
-    for n in [1,2,5,10]:
-        print("{} * {} = {}".format(a, n, egyptian_multiplication(a,n)))
+if __name__ == '__main__':
+    # this code runs when executed as a script
+    for a in [1,2,3]:
+        for n in [1,2,5,10]:
+            print("{} * {} = {}".format(a, n, egyptian_multiplication(a,n)))
 
 
 def power(a, n):

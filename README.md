@@ -6,7 +6,36 @@ Please put any written answers in [`answers.md`](answers.md)
 
 You may need to use conda to install `tqdm` to run the starter code for problem 4.
 
-## Survey
+## Grading Rubric
+
+The following Rubric will be used for grading.
+
+|   | Autograder | Correctness | Style | Total |
+|:-:|:-:|:-:|:-:|:-:|
+| Survey    |   | /10 |   |  /10 |
+| Problem 0 |   | /8  | /2  |  /10 |
+| Problem 1 | /5 | /10  | /5  | /20 |
+| Problem 2 | /10 | /15  | /5  | /30 |
+| Problem 3 | /5 | /8  | /2  | /15 |
+| Problem 4 |   |  /10 | /5  | /15 |
+
+To get full points on style, you should use comments to explain what you are doing in your code, and write docstrings for your functions.
+
+## Autograder
+
+You can run tests for the functions you will write in problems 1-3 using either `unittest` or `pytest` (you may need to `conda install pytest`).  From the command line:
+```
+python -m unittest test.py
+```
+or
+```
+pytest test.py
+```
+The tests are in [`test.py`](test.py).  You do not need to modify (or understand) this code.
+
+You need to pass all tests to receive full points.
+
+## Survey (10 points)
 
 Write a script in `survey.py` which outputs answers to the following questions.
 
@@ -20,7 +49,7 @@ Write a script in `survey.py` which outputs answers to the following questions.
 8. Do you have any questions or concerns you would like to share?
 
 
-Feel free to make this a reverse [code golf](https://en.wikipedia.org/wiki/Code_golf), e.g. make functions/variables to help you print your answers in an unnecessarily complicated way.  There are no rules, and no points will be awarded.  However, your output should look like the following when run from a terminal
+Feel free to make this a reverse [code golf](https://en.wikipedia.org/wiki/Code_golf), e.g. make functions/variables to help you print your answers in an unnecessarily complicated way.  There are no rules, and points are only based on completion.  However, your output should look like the following when run from a terminal
 ```
 $ python survey.py
 1. <answer to question 1>
@@ -29,12 +58,22 @@ $ python survey.py
 ```
 
 
-## Problem 0
+## Problem 0 (10 points)
 Implement the following [Fizzbuzz](https://imranontech.com/2007/01/24/using-fizzbuzz-to-find-developers-who-grok-coding/) program:
 
 Write a python script [`fizzbuzz.py`](fizzbuzz.py) which prints the numbers from 1 to 100, but for multiples of 3 print "fizz" instead of the number, for multiples of 5 print "buzz" instead of the number, and for multiples of both 3 and 5 print "fizzbuzz" instead of the number.
 
-## Problem 1
+The output of the first few lines should look like
+```
+1
+2
+3
+fizz
+4
+buzz
+```
+
+## Problem 1 (20 points)
 
 The [Egyptian multiplication algorithm](https://en.wikipedia.org/wiki/Ancient_Egyptian_multiplication) (or Russian peasant algorithm) computes the product `a * n` using repeated additions. The algorithm uses the basic rule `a * n = (a + a) * (n // 2)` if `n` is even, and `a * n = (a + a) * (n // 2) + a` if `n` is odd.  Recall `//` is integer (floor) division.
 
@@ -46,7 +85,7 @@ Write a function called `power(a, n)` to compute `a**n` via repeated multiplicat
 
 In general, you can use the Egyptian multiplication algorithm on any associative operation (meaning `a` can be an element of any semi-group) c.f. Stepanov and Rose, "From Mathematics to Generic Programming."
 
-## Problem 2 - Fibonacci Numbers
+## Problem 2 - Fibonacci Numbers (30 points)
 
 The [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) is defined as a linear recursion
 
@@ -78,7 +117,7 @@ Print the first 30 Fibonacci numbers using both these functions.
 
 Which of these algorithms do you expect to be asymptotically faster?  Why?
 
-## Problem 3 - Numpy Basics
+## Problem 3 - Numpy Basics (15 points)
 
 We can re-write the Fibonacci recurrence using a matrix-vector product:
 ```
@@ -93,7 +132,7 @@ Print the first 30 Fibonacci numbers using this function.  Compare to your answe
 
 What is the asymptotic number of additions done in this algorithm?  How does this compare to the algorithms in problem 2?
 
-## Problem 4 - PyPlot Basics
+## Problem 4 - PyPlot Basics (15 points)
 
 Use PyPlot to create a plot of the run times of your three functions to compute Fibonacci numbers.  
 
