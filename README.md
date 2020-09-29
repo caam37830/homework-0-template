@@ -12,7 +12,7 @@ The following Rubric will be used for grading.
 
 |   | Autograder | Correctness | Style | Total |
 |:-:|:-:|:-:|:-:|:-:|
-| Survey    |   | /10 |   |  /10 |
+| Survey    |   | /10 | /0 |  /10 |
 | Problem 0 |   | /8  | /2  |  /10 |
 | Problem 1 | /5 | /10  | /5  | /20 |
 | Problem 2 | /10 | /15  | /5  | /30 |
@@ -49,7 +49,7 @@ Write a script in `survey.py` which outputs answers to the following questions.
 8. Do you have any questions or concerns you would like to share?
 
 
-Feel free to make this a reverse [code golf](https://en.wikipedia.org/wiki/Code_golf), e.g. make functions/variables to help you print your answers in an unnecessarily complicated way.  There are no rules, and points are only based on completion.  However, your output should look like the following when run from a terminal
+Feel free to make this a reverse [code golf](https://en.wikipedia.org/wiki/Code_golf), e.g. make functions/variables to "help" you print your answers in an unnecessarily complicated way.  There are no rules, and points are based on completion (you can get some bonus style points for creativity in your code).  However, your output should look like the following when run from a terminal
 ```
 $ python survey.py
 1. <answer to question 1>
