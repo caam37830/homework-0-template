@@ -97,6 +97,8 @@ What is the asymptotic number of additions done in this algorithm?  How does thi
 
 Use PyPlot to create a plot of the run times of your three functions to compute Fibonacci numbers.  
 
+There is starter code at the end of [`fibonacci.py`](fibonacci.py) which will do the timing tests for you.
+
 * Use a log-log scale for your plot.
 * There should be three lines.
 * Your plot should have a legend.
