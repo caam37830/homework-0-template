@@ -19,9 +19,11 @@ The following Rubric will be used for grading.
 | Problem 3 | /5 | /8  | /2  | /15 |
 | Problem 4 |   |  /10 | /5  | /15 |
 
+Correctness will be based on code and the content of [`answers.md`](answers.md).
+
 To get full points on style you should use comments to explain what you are doing in your code and write docstrings for your functions.
 
-## Autograder
+### Autograder
 
 You can run tests for the functions you will write in problems 1-3 using either `unittest` or `pytest` (you may need to `conda install pytest`).  From the command line:
 ```
