@@ -51,10 +51,10 @@ if __name__ == '__main__':
     nrecursive = range(35)
     trecursive = get_runtimes(nrecursive, fibonacci_recursive)
 
-    niter = range(100)
+    niter = range(10000)
     titer = get_runtimes(niter, fibonacci_iter)
 
-    npower = range(100)
+    npower = range(10000)
     tpower = get_runtimes(npower, fibonacci_power)
 
     ## write your code for problem 4 below...

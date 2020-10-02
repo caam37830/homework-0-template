@@ -10,22 +10,36 @@ conda install --file requirements.txt
 ```
 to install the packages in [`requirements.txt`](requirements.txt)
 
-## Grading Rubric
+## Important Information
 
-The following Rubric will be used for grading.
+### Due Date
+This assignment is due Friday, October 9 at 12pm (noon) Chicago time.
+
+### Git
+You will need to use basic `git` in this assignment.  See [this tutorial](https://github.com/caam37830/git-tutorial) if you have never used it before.  The four commands to know are:
+* `git clone`
+* `git pull`
+* `git commit`
+* `git push`
+
+
+
+### Grading Rubric
+
+The following rubric will be used for grading.
 
 |   | Autograder | Correctness | Style | Total |
 |:-:|:-:|:-:|:-:|:-:|
 | Survey    |   | /10 | /0 |  /10 |
 | Problem 0 |   | /8  | /2  |  /10 |
 | Problem 1 | /5 | /10  | /5  | /20 |
-| Problem 2 | /10 | /15  | /5  | /30 |
-| Problem 3 | /5 | /8  | /2  | /15 |
+| Problem 2 | /10 | /12  | /3  | /25 |
+| Problem 3 | /5 | /12  | /3  | /20 |
 | Problem 4 |   |  /10 | /5  | /15 |
 
-Correctness will be based on code and the content of [`answers.md`](answers.md).
+Correctness will be based on code (i.e. did you provide was was aksed for) and the content of [`answers.md`](answers.md).
 
-To get full points on style you should use comments to explain what you are doing in your code and write docstrings for your functions.
+To get full points on style you should use comments to explain what you are doing in your code and write docstrings for your functions.  In other words, make your code readable and understandable.
 
 ### Autograder
 
@@ -83,6 +97,8 @@ buzz
 
 The [Egyptian multiplication algorithm](https://en.wikipedia.org/wiki/Ancient_Egyptian_multiplication) (or Russian peasant algorithm) computes the product `a * n` using repeated additions. The algorithm uses the basic rule `a * n = (a + a) * (n // 2)` if `n` is even, and `a * n = (a + a) * (n // 2) + a` if `n` is odd.  Recall `//` is integer (floor) division.
 
+For the purposes of this problem, you can assume `n` will always be an integer with `n >= 0`.
+
 You can view [`egyptian.py`](egyptian.py) for a basic Python implementation.
 
 How many additions are done in the Egyptian multiplication algorithm?  Your answer should be in terms of `log2(n)` and the number of non-zero bits of `n` (when `n` is represented as a binary integer), denoted `#(n)`.  Hint: how many additions are done at each level of recursion, and how many levels of recursion are there?
@@ -91,7 +107,7 @@ Write a function called `power(a, n)` to compute `a**n` via repeated multiplicat
 
 In general, you can use the Egyptian multiplication algorithm on any associative operation (meaning `a` can be an element of any semi-group) c.f. Stepanov and Rose, "From Mathematics to Generic Programming."
 
-## Problem 2 - Fibonacci Numbers (30 points)
+## Problem 2 - Fibonacci Numbers (25 points)
 
 The [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) is defined as a linear recursion
 
@@ -121,9 +137,9 @@ Write a Python function named `fibonacci_iter` to implement this algorithm.
 
 Print the first 30 Fibonacci numbers using both these functions.
 
-Which of these algorithms do you expect to be asymptotically faster?  Why?
+Which of these algorithms do you expect to be asymptotically faster?  Why?  Full aysmptotic analysis of `fibonacci_recursive` is not trivial, and you do not need to do it.  Just give a high-level argument for which algorithm you expect to be asymptotically faster.
 
-## Problem 3 - Numpy Basics (15 points)
+## Problem 3 - Numpy Basics (20 points)
 
 We can re-write the Fibonacci recurrence using a matrix-vector product:
 ```
@@ -136,7 +152,7 @@ Write a Python function `fibonacci_power` that computes `F_n` using the above re
 
 Print the first 30 Fibonacci numbers using this function.  Compare to your answer from problem 3.
 
-What is the asymptotic number of operations done in this algorithm?  Addition and multiplication both count as single operations (there are special circuits on a CPU to do either in one clock cycle). How does this compare to the algorithms in problem 2?
+What is the asymptotic number of operations done in this algorithm?  Addition and multiplication both count as single operations (there are circuits on a CPU to do either in one clock cycle). How does this compare to the algorithms in problem 2?
 
 What are potential issues you might run into with large values of `n` in this algorithm?  (You don't need to address them in code.)  Do you think it would be better to use `np.float64` or `np.int64` in your arrays for large values of `n`?  You can specify the data type of an array using the keyword `dtype`, for example `x = np.array([1,2,3], dtype=np.float64)`.
 

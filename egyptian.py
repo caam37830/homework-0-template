@@ -6,7 +6,7 @@ def egyptian_multiplication(a, n):
     """
     returns the product a * n
 
-    assume n is a positive integer
+    assume n is a nonegative integer
     """
     def isodd(n):
         """
@@ -36,6 +36,6 @@ def power(a, n):
     """
     computes the power a ** n
 
-    assume n is a positive integer
+    assume n is a nonegative integer
     """
     pass
