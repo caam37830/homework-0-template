@@ -88,7 +88,6 @@ The first few lines of output should look like
 ```
 1
 2
-3
 fizz
 4
 buzz
